@@ -1,27 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>DVIR</title>
+        <link href="style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
 
-<head>
-    <img src="https://abm-website-assets.s3.amazonaws.com/inddist.com/s3fs-public/styles/hero/public/featured_image/2016/08/HomeDepotaeae.jpg?itok=HJZiSN8H" height="auto" width="auto">
-    <title>DVIR</title>
-    <link href="style.css" rel="stylesheet" />
-    <h1>Daily Vehicle Inspection Report</h1><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <div class="show-login-btn"><i class="fas fa-sign-in-alt"></i>Show Login Form</div>
 
-</head>
 
-<body>
-    <div id="container">
-        <aside>
-            <span style="font-size:50px;">
-            <button class="btn"><i class="fas fa-glasses"></i></button>
-            </span>
-            <button type="button">Log In</button>
-            <button type="button">Register</button>
-        </aside>
-    </div>
-</body>
-<footer>
 
-</footer>
+        <div class="login-box">
+                <div class="hide-login-btn"><i class="fas fa-times"></i></div>
+            <form class="login-form" action="index.html" method="post">
+                <h1>Daily Vehicle Inspection Report</h1>
+                <input class="txtb" type="text" name="" placeholder="Username">
+                <input class="txtb" type="password" name="" placeholder="Password">
+                <input class="login-btn" type="submit" name="" value="Login">
+
+            </form>
+        </div>
+
+
+        <script type="text/javascript">
+            $(".show-login-btn").on("click",function(){
+                $(".login-box").toggleClass("showed");
+            });
+            $(".hide-login-btn").on("click",function(){
+                $(".login-box").toggleClass("showed");
+            });
+        </script>
+        
+    </body>
+    <footer>
+
+    </footer>
 
 </html>
